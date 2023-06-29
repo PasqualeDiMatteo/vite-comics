@@ -64,7 +64,7 @@ export default {
         <div class="container">
             <div class="nav-bar">
                 <figure>
-                    <img src="../assets/img/dc-logo.png" alt="DC Logo">
+                    <a href="#"><img src="../assets/img/dc-logo.png" alt="DC Logo"></a>
                 </figure>
                 <nav>
                     <ul>

@@ -63,7 +63,9 @@ export default {
 
 img {
     width: 60px;
+    height: 70px;
     margin-right: 10px;
+    object-fit: scale-down;
 }
 
 ul {
