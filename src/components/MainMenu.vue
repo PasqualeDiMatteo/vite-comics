@@ -53,10 +53,12 @@ export default {
         </div>
     </div>
 </template>
-<style  scoped>
-.main-links {
-    background-color: #0282f9;
+<style lang="scss" scoped>
+@use "../assets/scss/_vars.scss" as *;
+@use "../assets/scss/_mixins.scss" as *;
 
+.main-links {
+    background-color: $blue;
 }
 
 img {
@@ -65,17 +67,14 @@ img {
 }
 
 ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flexbox(space-between, center);
     width: 100%;
     height: 150px;
 }
 
 a {
     padding: 0 40px;
-    display: flex;
-    align-items: center;
+    @include flexbox(flex-start, center);
     font-size: 0.8rem;
     color: white;
 }

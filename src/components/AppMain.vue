@@ -24,6 +24,8 @@ export default {
 
 <style scoped lang="scss">
 @use "../assets/scss/_vars.scss" as *;
+@use "../assets/scss/_mixins.scss" as *;
+
 
 h1 {
     color: white;
@@ -34,8 +36,7 @@ h1 {
 }
 
 .content {
-    display: flex;
-    align-items: center;
+    @include flexbox(flex-start, center);
     height: 150px;
 }
 </style>

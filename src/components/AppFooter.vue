@@ -24,6 +24,8 @@ export default {
 </template>
 <style scoped lang="scss">
 @use "../assets/scss/_vars.scss" as *;
+@use "../assets/scss/_mixins.scss" as *;
+
 
 footer {
     background-color: $grey;
@@ -31,15 +33,12 @@ footer {
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexbox(space-between, center);
     height: 100%;
 }
 
 .social-icon {
-    display: flex;
-    align-items: center;
+    @include flexbox(flex-start, center);
 }
 
 button {

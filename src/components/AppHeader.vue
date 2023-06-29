@@ -68,8 +68,10 @@ export default {
                 </figure>
                 <nav>
                     <ul>
-                        <li v-for="link in navbarLinks"><a :href="link.url" :class="{ active: link.current }">
-                                {{ link.text }}</a>
+                        <li v-for="link in navbarLinks">
+                            <a :href="link.url" :class="{ active: link.current }">
+                                {{ link.text }}
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -80,11 +82,11 @@ export default {
 
 <style lang="scss" scoped>
 @use "../assets/scss/_vars.scss" as *;
+@use "../assets/scss/_mixins.scss" as *;
+
 
 .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexbox(space-between, center);
     height: 120px
 }
 
@@ -93,8 +95,8 @@ figure {
     flex-grow: 0;
     flex-shrink: 0;
     height: 100%;
-    display: flex;
-    align-items: center;
+    @include flexbox(space-between, center);
+
 
 }
 
@@ -116,13 +118,11 @@ ul {
     height: 100%;
     justify-content: end;
 
-
 }
 
 li {
     height: 100%;
-    display: flex;
-    align-items: center;
+    @include flexbox(flex-start, center);
 }
 
 a {
