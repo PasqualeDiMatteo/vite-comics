@@ -1,8 +1,11 @@
 <script>
 import MainMenu from "./MainMenu.vue"
+import MainSection from "./MainSection.vue"
+
 export default {
     components: {
-        MainMenu
+        MainMenu,
+        MainSection
     }
 }
 </script>
@@ -16,6 +19,7 @@ export default {
         </div>
     </div>
     <MainMenu />
+    <MainSection />
 </template>
 
 <style scoped>
