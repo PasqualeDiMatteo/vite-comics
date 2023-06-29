@@ -1,5 +1,9 @@
 <script>
+import MainMenu from "./MainMenu.vue"
 export default {
+    components: {
+        MainMenu
+    }
 }
 </script>
 
@@ -11,6 +15,7 @@ export default {
             </div>
         </div>
     </div>
+    <MainMenu />
 </template>
 
 <style scoped>
