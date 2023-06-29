@@ -2,7 +2,7 @@
 export default {
     data() {
         return {
-            navbar: [
+            navbarLinks: [
                 {
                     text: 'Characters',
                     url: '#',
@@ -68,16 +68,9 @@ export default {
                 </figure>
                 <nav>
                     <ul>
-                        <li><a href="#">Characters</a></li>
-                        <li><a href="#">Characters</a></li>
-                        <li><a href="#">Characters</a></li>
-                        <li><a href="#">Characters</a></li>
-                        <li><a href="#">Characters</a></li>
-                        <li><a href="#">Characters</a></li>
-                        <li><a href="#">Characters</a></li>
-                        <li><a href="#">Characters</a></li>
-                        <li><a href="#">Characters</a></li>
-                        <li><a href="#">Characters</a></li>
+                        <li v-for="link in navbarLinks"><a :href="link.url" :class="{ active: link.current }">
+                                {{ link.text }}</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -90,13 +83,59 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 120px
+}
+
+figure {
+    flex-basis: calc(100%/5);
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+img {
+    height: 80px;
+    align-items: center;
+}
+
+nav {
+    flex-basis: calc(100%/5*4);
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 100%;
+    text-align: right;
 }
 
 ul {
     display: flex;
+    height: 100%;
+    justify-content: end;
+
+
+}
+
+li {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 a {
     color: black;
+    padding: 0px 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    line-height: 120px;
+}
+
+
+.active {
+    color: blue;
+    border-bottom: 3px solid blue;
 }
 </style>
