@@ -22,13 +22,15 @@ export default {
     <MainSection />
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use "../assets/scss/_vars.scss" as *;
+
 h1 {
     color: white;
 }
 
 .background {
-    background-color: #1c1c1c;
+    background-color: $dark-gray;
 }
 
 .content {

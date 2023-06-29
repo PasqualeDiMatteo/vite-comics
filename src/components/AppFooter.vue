@@ -22,9 +22,11 @@ export default {
         </div>
     </footer>
 </template>
-<style scoped>
+<style scoped lang="scss">
+@use "../assets/scss/_vars.scss" as *;
+
 footer {
-    background-color: #303030;
+    background-color: $grey;
     height: 94px;
 }
 
@@ -42,7 +44,7 @@ footer {
 
 button {
     background-color: inherit;
-    border: 1px solid #0282f9;
+    border: 1px solid $blue;
     padding: 10px 20px;
     color: white;
     font-weight: 600;
@@ -62,7 +64,7 @@ li {
 }
 
 span {
-    color: #0282f9;
+    color: $blue;
     margin-right: 20px;
     font-weight: 600;
 }

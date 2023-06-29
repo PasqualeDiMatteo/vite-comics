@@ -78,7 +78,9 @@ export default {
     </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use "../assets/scss/_vars.scss" as *;
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -135,7 +137,7 @@ a {
 
 
 .active {
-    color: blue;
-    border-bottom: 3px solid blue;
+    color: $blue;
+    border-bottom: 3px solid $blue;
 }
 </style>
