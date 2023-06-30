@@ -132,7 +132,7 @@ a {
     font-weight: 600;
     text-transform: uppercase;
     display: flex;
-    line-height: 120px;
+    line-height: 117px;
 }
 
 

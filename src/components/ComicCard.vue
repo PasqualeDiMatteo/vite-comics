@@ -33,6 +33,7 @@ export default {
         margin-left: 30%;
         color: white;
         font-size: 12px;
+        text-transform: uppercase;
     }
 }
 </style>
