@@ -24,13 +24,13 @@ export default {
         object-position: top;
         width: 100%;
         height: 150px;
-        clip-path: inset(0 26% 0 26%);
+        clip-path: inset(0 30% 0 30%);
         cursor: pointer;
     }
 
     h3 {
         margin-top: 10px;
-        margin-left: 26%;
+        margin-left: 30%;
         color: white;
         font-size: 12px;
     }
