@@ -159,8 +159,7 @@ export default {
 }
 
 .content {
-    display: flex;
-    flex-wrap: wrap;
+    @include flexbox(start, start, wrap);
 }
 
 button {

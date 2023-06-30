@@ -18,7 +18,6 @@ export default {
     flex-basis: calc(100%/6);
     margin: 30px 0;
 
-
     img {
         display: block;
         object-fit: scale-down;
